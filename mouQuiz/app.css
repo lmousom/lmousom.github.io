@@ -155,14 +155,14 @@ body {
   overflow: hidden;
 }
 
-.container {
+.cong {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-.container:before, .container:after {
+.cong:before, .cong:after {
   content: "";
   position: absolute;
   width: 4px;
@@ -172,7 +172,7 @@ body {
   -webkit-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
   animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
 }
-.container:after {
+.cong:after {
   -webkit-animation-delay: 1.25s, 1.25s, 1.25s;
   animation-delay: 1.25s, 1.25s, 1.25s;
   -webkit-animation-duration: 1.25s, 1.25s, 6.25s;
