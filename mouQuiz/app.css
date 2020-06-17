@@ -80,6 +80,19 @@ h3 {
   display: none;
 }
 
+
+@keyframes pulse {
+  100% { transform: scale3d(1.2,1.2,1.2)}
+}
+
+svg {
+  max-width: 100vmin;
+  max-height: 100vmin;
+  display: block;
+  margin: 0 auto;
+  animation: pulse 1s ease-in-out alternate infinite
+}
+
 /* BUTTONS */
 .btn {
   font-size: 1.8rem;
