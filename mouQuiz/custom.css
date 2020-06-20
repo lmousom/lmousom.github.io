@@ -4,7 +4,6 @@
 
 .container1 {
   display: flex;
-  width: 100vw;
   justify-content: center;
   align-items: center;
   max-width: 80rem;
