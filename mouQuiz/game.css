@@ -37,7 +37,7 @@
 
 #hud {
   display: flex;
-  position: fixed;
+  position: absolute;
   padding-top: 10px;
   justify-content: space-between;
 }
