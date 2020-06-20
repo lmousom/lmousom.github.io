@@ -16,9 +16,11 @@
 }
 
 .load {
+  width: 12px;
+  height: 12px;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
