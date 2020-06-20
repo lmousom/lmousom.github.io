@@ -97,13 +97,17 @@ choices.forEach((choice) => {
         if (classToApply === 'correct') {
             incrementScore(CORRECT_BONUS);
         }
+        
+         if (classToApply === 'incorrect') {
+            question.innerHTML = correct_answer;
+        }
 
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 2500);
+        }, 2200);
     });
 });
 
