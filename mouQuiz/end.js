@@ -13,11 +13,14 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-if (finalScore < 10) {
-   function OnFail() {
-  var element = document.getElementById("congo");
-  element.classList.remove("cong");
+if (finalScore.innerText < 10) {
+   OnFail();
 }
+
+
+function OnFail() {
+  var element = document.getElementById("congo");
+  element.className = element.className.replace(/\bcong\b/g, "");
 }
 
 saveHighScore = (e) => {
