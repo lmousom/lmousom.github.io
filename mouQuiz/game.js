@@ -98,9 +98,7 @@ choices.forEach((choice) => {
             incrementScore(CORRECT_BONUS);
         }
         
-         if (classToApply === 'incorrect') {
-            loadedQuestion.correct_answer
-        }
+        
 
         selectedChoice.parentElement.classList.add(classToApply);
 
