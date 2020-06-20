@@ -13,6 +13,10 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
+if(mostRecentScore < 10) => {
+   OnFail();
+}
+
 saveHighScore = (e) => {
     e.preventDefault();
 
@@ -27,3 +31,8 @@ saveHighScore = (e) => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('/');
 };
+
+function OnFail() {
+  var element = document.getElementById("congo");
+  element.classList.remove("cong");
+}
