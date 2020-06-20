@@ -14,7 +14,10 @@ username.addEventListener('keyup', () => {
 });
 
 if (finalScore < 10) {
-   OnFail();
+   function OnFail() {
+  var element = document.getElementById("congo");
+  element.classList.remove("cong");
+}
 }
 
 saveHighScore = (e) => {
@@ -32,7 +35,4 @@ saveHighScore = (e) => {
     window.location.assign('/');
 };
 
-function OnFail() {
-  var element = document.getElementById("congo");
-  element.classList.remove("cong");
-}
+
