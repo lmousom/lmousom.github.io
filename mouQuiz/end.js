@@ -13,7 +13,7 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-if(mostRecentScore < 10) => {
+if (mostRecentScore < 10) {
    OnFail();
 }
 
