@@ -119,6 +119,16 @@ svg {
   transform: none;
 }
 
+
+.preventcopy {
+-webkit-touch-callout: none; 
+-webkit-user-select: none; 
+-khtml-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+user-select: none; 
+}
+
 /* FORMS */
 form {
   width: 100%;
