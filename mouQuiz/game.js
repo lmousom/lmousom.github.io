@@ -99,7 +99,7 @@ choices.forEach((choice) => {
         }
         
          if (classToApply === 'incorrect') {
-            question.innerHTML = correct_answer;
+            loadedQuestion.correct_answer
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
