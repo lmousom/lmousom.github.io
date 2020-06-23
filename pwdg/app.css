@@ -76,6 +76,7 @@ input[type=checkbox] {
 
 .btn-large {
 	display: block;
+	border-radius: 25px;
 	width: 100%;
 }
 
