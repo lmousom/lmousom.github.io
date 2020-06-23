@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import "compass/css3";
 
 * {
 	box-sizing: border-box;
@@ -15,12 +14,6 @@ body {
 	justify-content: center;
 	padding: 10px;
 	min-height: 100vh;
-}
-
- #canvas {
-	 position: absolute;
-	 left: 0;
-	 top: 0;
 }
  
 
