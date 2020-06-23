@@ -16,6 +16,10 @@ body {
 	min-height: 100vh;
 }
 
+#length {
+   border-radius: 12px;
+}
+
 p {
 	margin: 5px 0;
 }
