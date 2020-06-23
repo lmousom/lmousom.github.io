@@ -16,12 +16,6 @@ body {
 	min-height: 100vh;
 }
 
-#particle-canvas {
-  width: 100vw;
-  min-height: 100vh;
-}
- 
-
 p {
 	margin: 5px 0;
 }
