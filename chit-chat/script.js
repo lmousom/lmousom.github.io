@@ -1,4 +1,4 @@
-const socket = io('https://mousom.com/chit-chat:443')
+const socket = io('https://mousom.com/chit-chat')
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
