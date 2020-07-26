@@ -10,11 +10,10 @@ var timerID = setInterval(updateTime, 1000);
 updateTime();
 function updateTime() {
     var cd = new Date();
-    var hour = cd.getHours();
     var hours = cd.getHours();
-    var newformat = hour >= 24 ? 'PM' : 'AM'; 
     hours = hours % 12;
     hours = hours ? hours : 12;
+    var newformat = hours >= 12 ? 'PM' : 'AM'; 
     clock.time = zeroPadding(hours, 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2) + ' ' + zeroPadding(newformat);
    
 };
