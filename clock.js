@@ -12,7 +12,7 @@ function updateTime() {
     var cd = new Date();
     var hours = cd.getHours();
     hours = hours % 12;
-    var newformat = hours >= 12 ? 'PM' : 'AM'; 
+    var newformat = hours >= 13 ? 'PM' : 'AM'; 
     hours = hours ? hours : 12;
     clock.time = zeroPadding(hours, 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2) + ' ' + zeroPadding(newformat, 2);
    
