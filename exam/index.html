@@ -7,18 +7,37 @@
     <title>Kids Exam</title>
     
     <!-- style.css -->
+    <link rel="stylesheet" href="src/css/loader.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
-    <div class="wrapper">
+<body onload="onLoad()" id="main">
+
+
+    <div class="id"><div class="loader">
+        <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <circle class="load one" cx="60" cy="60" r="40" />
+          <circle class="load two" cx="60" cy="60" r="40" />
+          <circle class="load three" cx="60" cy="60" r="40" />
+          <g>
+            <circle class="point one" cx="45" cy="70" r="5" />
+            <circle class="point two" cx="60" cy="70" r="5" />
+            <circle class="point three" cx="75" cy="70" r="5" />
+          </g>
+        </svg>
+        </div></div>
+    
+    <script>
+        function onLoad() {
+            document.getElementById("main").innerHTML = `<div class="wrapper">
         <div class="welcome_text">
             <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
                 <input type="text" required="required" name="name" id="name">
                 <button>Start Exam</button>
             </form>
         </div>
-    </div>
-
+    </div>`
+        }
+        </script>
     <!-- site.js -->
     <script src="src/js/start.js"></script>
 </body>
