@@ -6,19 +6,7 @@
     justify-content: center;
     align-items: center;
 }
-.loader {
-    width: 150px;
-    height: 150px;
-}
-svg {
-    width: 90%;
-    fill: none;
-}
-.load {
-    transform-origin: 50% 50%;
-    stroke-dasharray: 570;
-    stroke-width: 20px;
-}
+
 .load.one {
     stroke: #1B0398;
     animation: load 1.5s infinite;
@@ -32,6 +20,19 @@ svg {
     stroke: #5DC4F7;
     animation: load 1.5s infinite;
     animation-delay: 0.2s;
+}
+.loader {
+    width: 150px;
+    height: 150px;
+}
+svg {
+    width: 90%;
+    fill: none;
+}
+.load {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 570;
+    stroke-width: 20px;
 }
 .point {
     animation: bounce 1s infinite ease-in-out;
