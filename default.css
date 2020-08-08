@@ -27,23 +27,24 @@
 	 box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
 }
  .card img {
-	 width: 60%;
-	 border: solid 8px #eaeaea;
+	 width: 250px;
+	 border: solid 6px #eaeaea;
 	 border-radius: 50%;
 	 margin: 0 auto;
 }
- .card h1 {
+ .card h2 {
 	 margin: 0.6rem 0 0 0;
 	 text-align: center;
 	 font-family: Heebo, Helvetica, sans-serif;
 }
- .card h2 {
+ .card h3 {
 	 margin-top: 0;
 	 text-align: center;
 	 font-family: Heebo, Helvetica, sans-serif;
 	 font-weight: 300;
 }
  .social-container {
+	 margin-top: -20px;
 	 display: flex;
 	 justify-content: center;
 }
