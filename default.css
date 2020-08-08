@@ -3,7 +3,9 @@
 	 transition: 1s;
 }
 .contact {
+
 	 height: 100%;
+	 width:100%
 	 padding: 40px;
 	 background: linear-gradient(#4dd0e1, #7e57c2);
 }
