@@ -21,19 +21,6 @@
     animation: load 1.5s infinite;
     animation-delay: 0.2s;
 }
-.loader {
-    width: 150px;
-    height: 150px;
-}
-svg {
-    width: 90%;
-    fill: none;
-}
-.load {
-    transform-origin: 50% 50%;
-    stroke-dasharray: 570;
-    stroke-width: 20px;
-}
 .point {
     animation: bounce 1s infinite ease-in-out;
 }
@@ -49,6 +36,20 @@ svg {
     fill: #554d73;
     animation-delay: 0.2s;
 }
+.loader {
+    width: 150px;
+    height: 150px;
+}
+svg {
+    width: 90%;
+    fill: none;
+}
+.load {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 570;
+    stroke-width: 20px;
+}
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
