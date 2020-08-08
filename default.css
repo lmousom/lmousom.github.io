@@ -2,6 +2,12 @@
 	 transform: translateY(-500px);
 	 transition: 1s;
 }
+
+.main-contact{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
 .contact {
 
 	 height: 100%;
