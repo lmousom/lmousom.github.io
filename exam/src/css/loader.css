@@ -20,16 +20,16 @@ svg {
     stroke-width: 20px;
 }
 .load.one {
-    stroke: #554d73;
+    stroke: #1B0398;
     animation: load 1.5s infinite;
 }
 .load.two {
-    stroke: #a496a4;
+    stroke: #6C0B6C;
     animation: load 1.5s infinite;
     animation-delay: 0.1s;
 }
 .load.three {
-    stroke: #a5a7bb;
+    stroke: #5DC4F7;
     animation: load 1.5s infinite;
     animation-delay: 0.2s;
 }
