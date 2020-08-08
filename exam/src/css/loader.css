@@ -67,6 +67,6 @@ svg {
    }
     100% {
         stroke-dashoffset: 570;
-        transform: rotate(360deg);
+        transform: rotate(360deg) !important;
    }
 }
