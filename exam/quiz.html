@@ -52,20 +52,7 @@
     
      <script>
        
-       $('#counter').click(function() {
-    if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-  } 
-   if(localStorage.clickcount == 5){
-
-    console.log('Not Allowed');
- }      
-         
-});
+       
 
 var hideAlertDialog = function() {
   $("#dialog-1").hide();
@@ -78,7 +65,25 @@ var hideAlertDialog = function() {
     
     ifvisible.on("focus", function(){
       $("#dialog-1").show();
-    });</script>
+    });
+    
+       $('#counter').click(function() {
+    if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+  } 
+              
+});
+       
+       if(localStorage.clickcount == 5){
+
+    alert('Not Allowed');
+ }  
+    
+    </script>
    <ons-alert-dialog id="dialog-1">
       <div class="alert-dialog-title"><strong style="color: #ff3333">Warning!!</strong></div>
       <div class="alert-dialog-content">
