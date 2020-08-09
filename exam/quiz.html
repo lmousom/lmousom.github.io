@@ -58,20 +58,20 @@ var hideAlertDialog = function() {
   $("#dialog-1").hide();
   
   if (typeof(Storage) !== "undefined") {
-    if (sessionStorage.clickcount) {
-      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
     } else {
-      sessionStorage.clickcount = 1;
+      localStorage.clickcount = 1;
     }
     
   } else {
    
   }
   
-  if(sessionStorage.clickcount >= 5 ){
+  if(localStorage.clickcount >= 5 ){
     location.replace("https://res.cloudinary.com/dvv5mrpxb/image/upload/v1596950969/tenor_rchf3r.gif")
   } else{
-    sessionStorage.clear();
+    localStorage.clear();
   }
 };
 
