@@ -56,6 +56,21 @@
 
 var hideAlertDialog = function() {
   $("#dialog-1").hide();
+  
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    
+  } else {
+   
+  }
+  
+  if(localStorage.clickcount < 6 ){
+    alert('NOT');
+  }
 };
 
      ifvisible.on("blur", function(){
@@ -67,21 +82,6 @@ var hideAlertDialog = function() {
       $("#dialog-1").show();
     });
     
-       $('#counter').click(function() {
-    if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-  } 
-              
-});
-       
-       if(localStorage.clickcount == 5){
-
-    alert('Not Allowed');
- }  
     
     </script>
    <ons-alert-dialog id="dialog-1">
