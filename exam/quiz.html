@@ -68,8 +68,10 @@ var hideAlertDialog = function() {
    
   }
   
-  if(localStorage.clickcount == 5 ){
+  if(localStorage.clickcount >= 5 ){
     location.replace("https://res.cloudinary.com/dvv5mrpxb/image/upload/v1596950969/tenor_rchf3r.gif")
+  } else{
+    localStorage.clear();
   }
 };
 
