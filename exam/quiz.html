@@ -7,6 +7,9 @@
     <title>Kids Exam</title>
 
     <!-- style.css -->
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -38,13 +41,39 @@
       </div>
     </div>
 
+    <ons-alert-dialog id="dialog-1">
+      <div class="alert-dialog-title"><strong style="color: #ff3333">Warning!!</strong></div>
+      <div class="alert-dialog-content">
+        An error has occurred!
+      </div>
+      <div class="alert-dialog-footer">
+        <ons-alert-dialog-button onclick="hideAlertDialog()">OK</ons-alert-dialog-button>
+      </div>
+    </ons-alert-dialog>
+    
+    <script src="src/js/ifvisible.js"></script>
     <!-- site.js -->
     <script src="src/js/site.js"></script>
 
-      <!-- user info -->
       <script src="src/js/userInfo.js"></script>
-
-     <!-- timer -->
      <script src="src/js/timer.js"></script>
+     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    
+     <script>
+
+var hideAlertDialog = function() {
+  $("#dialog-1").hide();
+};
+
+     ifvisible.on("blur", function(){
+      $("#dialog-1").show();
+ 
+    });
+    
+    ifvisible.on("focus", function(){
+      $("#dialog-1").show();
+    });</script>
+   
   </body>
 </html>
