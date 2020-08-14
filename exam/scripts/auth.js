@@ -106,6 +106,7 @@ function submitForm(e) {
 
 function logout(){
   firebase.auth().signOut();
+  document.getElementById("log-out").style.display = "none";
 }
 
 
