@@ -25,7 +25,7 @@
           <label for="isbn">Price</label>
           <input type="number" id="isbn" class="form-control">
         </div>
-       <input type="submit" value="Add Gadget" class="btn btn-primary btn-block">
+       <input type="submit" id="add" value="Add Gadget" class="btn btn-primary btn-block">
       </form>
       <table class="table table-striped mt-5">
         <thead>
@@ -39,6 +39,40 @@
         <tbody id="book-list"></tbody>
       </table>
   </div>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'write name *tag': function(variable) {
+      let name = document.getElementById("title");
+              name.value=variable;
+    },
+    
+    'write Brand *tag': function(variable) {
+      let brand = document.getElementById("author");
+              brand.value=variable;
+    },
+    
+          'write price *tag':function(variable){
+              let price = document.getElementById("isbn");
+              price.value=variable;
+          },
+    "add gadget": function(e){
+            let addButton = document.getElementById("add");
+            addButton.click();
+            
+          }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
 <script src="app.js"></script>
 </body>
 </html>
