@@ -41,16 +41,16 @@
   </div>
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-<script>
+<script src="app.js"></script>
+  <script>
 if (annyang) {
-  // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
     'write name *tag': function(variable) {
       let name = document.getElementById("title");
               name.value=variable;
     },
     
-    'write Brand *tag': function(variable) {
+    'write brand *tag': function(variable) {
       let brand = document.getElementById("author");
               brand.value=variable;
     },
@@ -62,7 +62,6 @@ if (annyang) {
     "add gadget": function(e){
             let addButton = document.getElementById("add");
             addButton.click();
-            
           }
   };
 
@@ -73,7 +72,6 @@ if (annyang) {
   annyang.start();
 }
 </script>
-<script src="app.js"></script>
 </body>
 </html>
 
