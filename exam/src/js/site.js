@@ -2,35 +2,70 @@
 let questions = [
   {
     id: 1,
-    question: "Mortimer found the book?",
-    answer: "in his father's library",
+    question: "One lakh can be expressed as ____________.",
+    answer: "100 thousands",
     options: [
-      "at a friends place",
-      "in a book fair",
-      "in his father's library",
-      "None of these"
+      "1000 thousands",
+      "100 hundreds",
+      "10 thousands",
+      "100 thousands"
     ]
   },
   {
     id: 2,
-    question: "What is the full form of CPU?",
-    answer: "Central Processing Unit",
+    question: "Which of the following is true for the number 82,951?",
+    answer: "2 is the face value of 2 in 82,951.",
     options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
+      "8 is the place value of 8 in 82,951.",
+      "900 is the face value of 9 in 82,951.",
+      "2 is the face value of 2 in 82,951.",
+      "500 is the place value of 5 in 82,951"
     ]
   },
   {
     id: 3,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
+    question: "Which of the following is the standard form for the given expanded form? 40,000 + 6,000 + 700 + 80 + 1",
+    answer: "46,781",
     options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
+      "47,187",
+      "46,781",
+      "64,781",
+      "47,681"
+    ]
+  },
+  
+  {
+    id: 4,
+    question: "Which of the following can also be written as 4,50,000?",
+    answer: "Forty-five ten thousands",
+    options: [
+      "Four thousands five hundreds",
+      "Forty-five ten thousands",
+      "Forty thousands",
+      "Forty-five hundreds"
+    ]
+  },
+  {
+    id: 5,
+    question: "Which of the following is the smallest 5-digit number?",
+    answer: "10,000",
+    options: [
+      "11,111",
+      "90,000",
+      "99,999",
+      "10,000"
+    ]
+  },
+  
+  {
+    id: 6,
+    question: "Which of the following shows the first three places from the right in a 5-digit number?",
+    answer: "Ones period",
+    options: [
+      "Ten thousands period",
+      "Thousands period",
+      "Tens period",
+      "Ones period"
     ]
   }
 ];
