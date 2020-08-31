@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
+<body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
     <div class="wrapper">
         <div class="result">
            <div class="badge"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i></div>
@@ -21,9 +21,10 @@
         </div>
     </div>
    
-    
-
-
+    <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
         <!-- user info -->
         <script src="src/js/userInfo.js"></script>
 </body>
