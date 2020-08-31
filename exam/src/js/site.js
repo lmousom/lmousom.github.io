@@ -80,12 +80,14 @@ window.onload = function() {
 
 function next() {
 
+  if (question_count == questions.length - 2) {
+  document.getElementById("btn_next").innerHTML = "FINISH";
+  }
    
   // if the question is last then redirect to final page
   if (question_count == questions.length - 1) {
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
-    document.getElementById("btn_next").innerHTML = "FINISH";
     location.href = "end.html";
   }
  
