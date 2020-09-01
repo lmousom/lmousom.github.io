@@ -76,7 +76,6 @@ shuffleQuestion(questions);
 
 let question_count = 0;
 let points = 0;
-
 window.onload = function() {
   show(question_count);
 
@@ -113,6 +112,7 @@ if(points <= 0){
   sessionStorage.setItem("points", points);
 
 }
+if(time > 60){location.href = "end.html";}
 
 function show(count) {
   let question = document.getElementById("questions");
