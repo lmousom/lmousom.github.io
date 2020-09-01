@@ -1,4 +1,3 @@
-
 let questions = [
   {
     id: 1,
@@ -80,12 +79,12 @@ window.onload = function() {
 
 function next() {
 
-  if (question_count == questions.length - 2) {
+  if (question_count == randomQuestions.length - 2) {
   document.getElementById("btn_next").innerHTML = "FINISH";
   }
    
   // if the question is last then redirect to final page
-  if (question_count == questions.length - 1) {
+  if (question_count == randomQuestions.length - 1) {
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
     location.href = "end.html";
@@ -94,7 +93,7 @@ function next() {
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
   // check if the answer is right or wrong
-  if (user_answer == questions[question_count].answer) {
+  if (user_answer == randomQuestions[question_count].answer) {
     points += 10;
     sessionStorage.setItem("points", points);
   }
