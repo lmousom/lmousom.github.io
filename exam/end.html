@@ -31,9 +31,8 @@
      var inputMarks = document.getElementById("marks").value;
      var inputName = document.getElementById("name_result").value;
      var inputTime = document.getElementById("time").value;   
-     db.collection("users").doc(user.uid).set({
+     db.collection("users").doc(inputName).set({
          marks: inputMarks,
-         name_result: inputName,
          time: inputTime
          
      })
