@@ -117,8 +117,11 @@ if(points <= 0){
 
 function show(count) {
   let question = document.getElementById("questions");
-  let [first, second, third, fourth] = questions[count].options;
-
+  let options_random = questions[count].options;
+  shuffleQuestion(options_random);
+  let [first, second, third, fourth] = options_random;
+  
+  
   question.innerHTML = `
   <h2>Q${count + 1}. ${questions[count].question}</h2>
    <ul class="option_group">
