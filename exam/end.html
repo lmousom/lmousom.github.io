@@ -33,7 +33,7 @@
         var inputTime = sessionStorage.getItem("time");
 
     // Add a new document in collection "cities"
-db.collection("users").doc("Marks").set({
+db.collection("users").doc(user.uid).set({
     name: inputName,
     marks: inputMarks,
     time: inputTime
