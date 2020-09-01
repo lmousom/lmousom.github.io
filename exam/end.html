@@ -16,13 +16,13 @@
         <div class="result">
            <div class="badge"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i></div>
            <h3 class="username">Thank you! <span id="name_result"></span></h3>
-           <p class="userpoints">Your Marks: <span class="points"></span></p>
+           <p class="userpoints">Your Marks: <span id="marks" class="points"></span></p>
          <p class="usertime"> Time taken: <span class="time_taken"></span> sec</p>
          <div class="home"><a class="waves-effect green accent-4 btn-small" href="https://mousom.com/exam">Return</a></div>
         </div>
     </div>
   
-    <script>document.getElementById("name_result").innerHTML = sessionStorage.getItem("name_store");</script>
+    <script>document.getElementById("name_result").innerHTML = sessionStorage.getItem("name_store");document.getElementById("marks").innerHTML = sessionStorage.getItem("user_points");</script>
         <!-- user info -->
         <script src="src/js/userInfo.js"></script>
 </body>
