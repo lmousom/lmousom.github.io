@@ -82,6 +82,14 @@ window.onload = function() {
 
 };
 
+function examTime() {
+            if (time => 60) {
+  
+              location.href = "end.html";
+			    
+       }
+}
+
 function next() {
 
   if (question_count == questions.length - 2) {
