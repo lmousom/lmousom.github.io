@@ -49,6 +49,7 @@
      <script src="src/js/timer.js"></script>
      <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
      <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script> <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script> <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script> <script>var firebaseConfig={apiKey:"AIzaSyAB_4MwB070SOSSa6dCbHe4P8w12WG3uKk",authDomain:"surfxm-2020.firebaseapp.com",databaseURL:"https://surfxm-2020.firebaseio.com",projectId:"surfxm-2020",storageBucket:"surfxm-2020.appspot.com",messagingSenderId:"1051957710307",appId:"1:1051957710307:web:56d7494609faf4bc4c24d6"};firebase.initializeApp(firebaseConfig);const auth=firebase.auth();const db=firebase.firestore();</script>
      <script src="scripts/auth.js"></script>
 <script>
 var hideAlertDialog=function(){$("#dialog-1").hide(),"undefined"!=typeof Storage&&(sessionStorage.clickcount?sessionStorage.clickcount=Number(sessionStorage.clickcount)+1:sessionStorage.clickcount=1),sessionStorage.clickcount>=5&&location.replace("https://mousom.com/exam/")};ifvisible.on("blur",function(){$("#dialog-1").show()}),ifvisible.on("focus",function(){$("#dialog-1").show()}); window.history.forward();function noBack() { window.history.forward(); }
