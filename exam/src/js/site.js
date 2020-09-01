@@ -1,4 +1,6 @@
-
+function shuffleQuestion(array) {
+  array.sort(() => Math.random() - 0.5);
+}
 let questions = [
   {
     id: 1,
@@ -69,6 +71,8 @@ let questions = [
     ]
   }
 ];
+
+shuffleQuestion(questions);
 
 let question_count = 0;
 let points = 0;
