@@ -83,7 +83,7 @@ window.onload = function() {
 };
 
 function examTime() {
-            if (time => 60) {
+            if (time > 60) {
   
               location.href = "end.html";
 			    
