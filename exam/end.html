@@ -31,7 +31,7 @@
         var inputMarks = sessionStorage.getItem("points");
         var inputName = sessionStorage.getItem("name_store");
         var inputTime = sessionStorage.getItem("time");
-        var inputCode = sessionStorage.getItem("code_store");
+        var inputCode = localStorage.getItem("code_store");
 
 
         firebase.auth().onAuthStateChanged(function(user) {
