@@ -21,7 +21,7 @@ auth.onAuthStateChanged(user => {
       dataBase.get().then(function(doc) {
   if (doc.exists) {
       var name_id = doc.data().name;
-      sessionStorage.setItem("name_wlc", name_id);
+      sessionStorage.setItem("name_store", name_id);
       var code_id = doc.data().code;
       document.getElementById("profile-name").innerHTML = "Welcome  " + name_id;
       document.getElementById("profile-code").innerHTML = "Your Code : " + code_id;
