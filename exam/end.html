@@ -28,7 +28,7 @@
     <script>document.getElementById("name_result").innerHTML = sessionStorage.getItem("name_store");
 
    var user = firebase.auth().currentUser;
-   var dataBase = db.collection("users").doc(user.uid);
+   
    function storeMarks() {
         
         var inputMarks = document.getElementById("marks").value;
