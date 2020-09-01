@@ -1,3 +1,4 @@
+
 let questions = [
   {
     id: 1,
@@ -68,7 +69,7 @@ let questions = [
     ]
   }
 ];
-let randomQuestions = questions[Math.floor(Math.random() * questions.length)];
+
 let question_count = 0;
 let points = 0;
 
@@ -79,12 +80,12 @@ window.onload = function() {
 
 function next() {
 
-  if (question_count == randomQuestions.length - 2) {
+  if (question_count == questions.length - 2) {
   document.getElementById("btn_next").innerHTML = "FINISH";
   }
    
   // if the question is last then redirect to final page
-  if (question_count == randomQuestions.length - 1) {
+  if (question_count == questions.length - 1) {
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
     location.href = "end.html";
@@ -93,7 +94,7 @@ function next() {
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
   // check if the answer is right or wrong
-  if (user_answer == randomQuestions[question_count].answer) {
+  if (user_answer == questions[question_count].answer) {
     points += 10;
     sessionStorage.setItem("points", points);
   }
@@ -112,10 +113,10 @@ if(points <= 0){
 
 function show(count) {
   let question = document.getElementById("questions");
-  let [first, second, third, fourth] = randomQuestions[count].options;
+  let [first, second, third, fourth] = questions[count].options;
 
   question.innerHTML = `
-  <h2>Q${count + 1}. ${randomQuestions[count].question}</h2>
+  <h2>Q${count + 1}. ${questions[count].question}</h2>
    <ul class="option_group">
   <li class="option">${first}</li>
   <li class="option">${second}</li>
