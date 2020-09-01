@@ -1,3 +1,4 @@
+firestore.settings({ timestampsInSnapshots: true });
 auth.onAuthStateChanged(user => {
   if (user) {
     document.getElementById("auth_div").style.display = "none";
