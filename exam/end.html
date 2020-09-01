@@ -32,8 +32,43 @@
         var inputName = sessionStorage.getItem("name_store");
         var inputTime = sessionStorage.getItem("time");
 
+
+        firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    var db = firebase.firestore();
+      var docRef = db.collection("users").doc(user.uid);
+      docRef.get().then(function(doc) {
+         if(doc && doc.exists) {
+            db.collection("users").doc(user.uid).set({
+    name: inputName,
+    marks: inputMarks,
+    time: inputTime
+})
+.then(function() {
+    console.log("Marks added to Database!");
+})
+.catch(function(error) {
+    console.error("Error writing document: ", error);
+});
+
+    }
+    }).catch(function(error) {
+    console.log("Got an error: ",error);
+    });
+  } else {
+    // No user is signed in.
+  }
+});
+
+
+
+
+
+
+
     // Add a new document in collection "cities"
-db.collection("users").doc(user.uid).set({
+db.collection("users").doc("Marks").set({
     name: inputName,
     marks: inputMarks,
     time: inputTime
