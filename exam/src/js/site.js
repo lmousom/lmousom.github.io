@@ -94,6 +94,12 @@ function next() {
     clearInterval(mytime);
     location.href = "end.html";
   }
+  
+  if (time <= 60) {
+    sessionStorage.setItem("time", time);
+    clearInterval(mytime);
+    location.href = "end.html";
+  }
  
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
