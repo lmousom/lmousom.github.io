@@ -112,7 +112,7 @@ if(points <= 0){
   sessionStorage.setItem("points", points);
 
 }
-if(time > 60){location.href = "end.html";}
+if(time > 60){location.href = "https://mousom.com/exam/end.html";}
 
 function show(count) {
   let question = document.getElementById("questions");
