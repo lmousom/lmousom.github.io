@@ -69,7 +69,7 @@ let questions = [
     ]
   }
 ];
-
+let randomQuestions = questions[Math.floor(Math.random() * questions.length)];
 let question_count = 0;
 let points = 0;
 
@@ -113,10 +113,10 @@ if(points <= 0){
 
 function show(count) {
   let question = document.getElementById("questions");
-  let [first, second, third, fourth] = questions[count].options;
+  let [first, second, third, fourth] = randomQuestions[count].options;
 
   question.innerHTML = `
-  <h2>Q${count + 1}. ${questions[count].question}</h2>
+  <h2>Q${count + 1}. ${randomQuestions[count].question}</h2>
    <ul class="option_group">
   <li class="option">${first}</li>
   <li class="option">${second}</li>
