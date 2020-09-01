@@ -95,12 +95,6 @@ function next() {
     location.href = "end.html";
   }
   
-  if (time <= 60) {
-    clearInterval(mytime);
-    location.href = "end.html";
-  }
- 
-
   let user_answer = document.querySelector("li.option.active").innerHTML;
   // check if the answer is right or wrong
   if (user_answer == questions[question_count].answer) {
