@@ -43,14 +43,12 @@
     
     <script src="src/js/ifvisible.js"></script>
     <!-- site.js -->
+    <script src="scripts/auth.js"></script>
     <script src="src/js/site.js"></script>
-
       <script src="src/js/userInfo.js"></script>
      <script src="src/js/timer.js"></script>
      <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
      <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
-     <script src="scripts/auth.js"></script>
 <script>
 var hideAlertDialog=function(){$("#dialog-1").hide(),"undefined"!=typeof Storage&&(sessionStorage.clickcount?sessionStorage.clickcount=Number(sessionStorage.clickcount)+1:sessionStorage.clickcount=1),sessionStorage.clickcount>=5&&location.replace("https://mousom.com/exam/")};ifvisible.on("blur",function(){$("#dialog-1").show()}),ifvisible.on("focus",function(){$("#dialog-1").show()}); window.history.forward();function noBack() { window.history.forward(); }
     </script>
