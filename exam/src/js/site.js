@@ -96,7 +96,6 @@ function next() {
   }
   
   if (time <= 60) {
-    sessionStorage.setItem("time", time);
     clearInterval(mytime);
     location.href = "end.html";
   }
