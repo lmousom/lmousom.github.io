@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body onload="storeMarks()">
+<body>
     <div class="wrapper">
         <div class="result">
            <div class="badge"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i></div>
@@ -32,8 +32,8 @@
 
    var dataBase = db.collection("users").doc(user.uid);
 
-   function storeMarks() {
-        
+   
+     
         var inputMarks = document.getElementById("marks").value;
         var inputName = document.getElementById("name_result").value;
         var inputTime = document.getElementById("time").value;
@@ -45,14 +45,6 @@
     });
    }
 
-
-}
-
-   else{
-
-
-   }
-    
     </script>
         
 </body>
