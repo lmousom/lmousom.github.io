@@ -19,12 +19,16 @@ auth.onAuthStateChanged(user => {
       var dataBase = db.collection("users").doc(user.uid);
       
       dataBase.get().then(function(doc) {
+  if (doc.exists) {
       var name_id = doc.data().name;
       sessionStorage.setItem("name", name_id);
       var code_id = doc.data().code;
       document.getElementById("profile-name").innerHTML = "Welcome  " + name_id;
       document.getElementById("profile-code").innerHTML = "Your Code : " + code_id;
-  
+  } else {
+      // doc.data() will be undefined in this case
+      console.log("No such document!");
+  }
 }).catch(function(error) {
   console.log("Error getting document:", error);
 });
@@ -104,5 +108,3 @@ function logout(){
   firebase.auth().signOut();
   document.getElementById("log-out").style.display = "none";
 }
-
-
