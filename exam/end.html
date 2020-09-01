@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body onload="storeMarks()">
+<body>
     <div class="wrapper">
         <div class="result">
            <div class="badge"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i></div>
@@ -32,7 +32,7 @@
         var inputTime = document.getElementById("time").value;
 
     // Add a new document in collection "cities"
-db.collection("Marks").doc(inputName).set({
+db.collection("users").doc("Marks").set({
     name: inputName,
     marks: inputMarks,
     time: inputTime
