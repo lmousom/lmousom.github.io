@@ -28,22 +28,21 @@
     <script>document.getElementById("name_result").innerHTML = sessionStorage.getItem("name_store");
 
    var user = firebase.auth().currentUser;
-   if(user != null){
-
    var dataBase = db.collection("users").doc(user.uid);
-
-   
-     
+   function storeMarks() {
+        
         var inputMarks = document.getElementById("marks").value;
         var inputName = document.getElementById("name_result").value;
         var inputTime = document.getElementById("time").value;
-           
-        db.collection('users').doc(cred.user.uid).set({
+
+          db.collection('users').doc(cred.user.uid).set({
           name: inputName ,
           marks: inputMarks,
           time: inputTime
     });
    }
+   storeMarks();
+   
 
     </script>
         
