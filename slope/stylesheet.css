@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    background-color: rgb(226, 233, 220);
+    text-align: center;
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    outline: none;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.result {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.btn {
+    margin-bottom: 10px;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.btnclr{
+
+    margin-bottom: 10px;
+    background-color: rgb(37, 9, 138);
+    color: rgb(255, 255, 255);
+}
+
+input {
+    width: 80%;
+    padding: 5px 14px;
+    border: 2px solid #201f1d;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.897);
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+input:focus {
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(0,0,0,.4);
+    background-color: rgb(60,60,60);
+}
+
+form {
+    
+    background-color: rgb(4, 255, 255);
+    padding: 20px;
+    color: #000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+form p:nth-child(1){
+    margin-top: 0;
+}
+
+.panel {
+    margin-top: 20px;
+    float: none;
+    
+}
+
+.glow {
+    background-color: black;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+@media (min-width: 768px) {
+    .panel {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .panel {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
