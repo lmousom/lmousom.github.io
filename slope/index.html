@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Slope Calculator</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	
-</head>
-<body>
+  <head>
+    <title>Slope Calculator</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-    	<div class="panel">
-    		<h2 class="text-center">Calculate Slope</h2>
-    		
-    			<p id="introText" class="text-center glow">Enter (X<sub>1</sub>,Y<sub>1</sub>) & (X<sub>2</sub>,Y<sub>2</sub>) below to calculate Slope</p>
-    			
-    			<form id="data-table">
-    				<div id="x1Input">
-    					<p>X<sub>1</sub> Value</p>
-    		     		<input id="x1" type="number" pattern="[0-9]*" />
-					</div>
-					
-					<div id="y1Input">
-    					<p>Y<sub>1</sub> Value</p>
-    		     		<input id="y1" type="number" pattern="[0-9]*"/>
-					</div>
+      <div class="panel">
+        <!-- <h2 class="text-center">Calculate Slope</h2> -->
+        <div class="header">
+          <span class="top right"></span>
+          <span class="top left"></span>
+          <h2>Calculate Slope</h2>
+          <span class="bottom right"></span>
+          <span class="bottom left"></span>
+        </div>
 
-					<div id="x2Input">
-    					<p>X<sub>2</sub> Value</p>
-	    				 <input id="x2" type="number" pattern="[0-9]*"/> 
-					</div>
+        <p id="introText" class="text-center glow">
+          Enter (X<sub>1</sub>,Y<sub>1</sub>) & (X<sub>2</sub>,Y<sub>2</sub>)
+          below to calculate Slope
+        </p>
 
-					<div id="y2Input">
-    					<p>Y<sub>2</sub> Value</p>
-    		     		<input id="y2" type="number" pattern="[0-9]*" />
-    				</div>
+        <form id="data-table">
+          <div id="x1Input">
+            <p>X<sub>1</sub> Value</p>
+            <input id="x1" type="number" pattern="[0-9]*" />
+          </div>
 
-    				
-					
-				 <button type="button" class="btn" onclick="calculate()">Calculate Slope</button>
-				 <!-- <button type="button" class="btnclr" onclick="clear()">Clear</button> -->
-    		</form>
-		<div id="results" class="text-center result">Slope result will appear here</div>
-    		
-    	</div>
+          <div id="y1Input">
+            <p>Y<sub>1</sub> Value</p>
+            <input id="y1" type="number" pattern="[0-9]*" />
+          </div>
+
+          <div id="x2Input">
+            <p>X<sub>2</sub> Value</p>
+            <input id="x2" type="number" pattern="[0-9]*" />
+          </div>
+
+          <div id="y2Input">
+            <p>Y<sub>2</sub> Value</p>
+            <input id="y2" type="number" pattern="[0-9]*" />
+          </div>
+
+          <button type="button" class="btn" onclick="calculate()">
+            Calculate
+          </button>
+          <!-- <button type="button" class="btnclr" onclick="clear()">Clear</button> -->
+        </form>
+
+        <div id="results" class="text-center result"></div>
+      </div>
     </div>
-	<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
