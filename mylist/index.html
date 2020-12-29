@@ -40,38 +40,8 @@
       </table>
   </div>
   
-  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+  
 <script src="app.js"></script>
-  <script>
-if (annyang) {
-  var commands = {
-    'write name *tag': function(variable) {
-      let name = document.getElementById("title");
-              name.value=variable;
-    },
-    
-    'write brand *tag': function(variable) {
-      let brand = document.getElementById("author");
-              brand.value=variable;
-    },
-    
-          'write price *tag':function(variable){
-              let price = document.getElementById("isbn");
-              price.value=variable;
-          },
-    "add gadget": function(e){
-            let addButton = document.getElementById("add");
-            addButton.click();
-          }
-  };
-
-  // Add our commands to annyang
-  annyang.addCommands(commands);
-
-  // Start listening. You can call this here, or attach this call to an event, button, etc.
-  annyang.start();
-}
-</script>
 </body>
 </html>
 
