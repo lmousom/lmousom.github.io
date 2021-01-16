@@ -8,8 +8,8 @@ function calculate() {
   error = "Please enter some values";
   c_in_y = y1 - y2;
   c_in_x = x1 - x2;
-  cal = c_in_y / c_in_x;
-  eq = cal * x1 - y1;
+  cal = Math.round(c_in_y / c_in_x);
+  eq = Math.round(cal * x1 - y1);
   //cal = cal.toFixed(1);
 
   result =
