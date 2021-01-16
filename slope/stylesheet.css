@@ -60,6 +60,8 @@ span.right {
   margin-bottom: 10px;
   padding: 7px;
   border: none;
+  cursor: pointer;
+	outline: inherit;
   border-radius: 18px;
   background-color: rgb(5, 228, 105);
   color: rgb(255, 255, 255);
