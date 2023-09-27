@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFC0CB;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F8C8DC;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #ff6600;
+    font-size: 36px;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite;
+}
+
+.message {
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+/* CSS for balloon and cake */
+.balloon, .cake {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.balloon {
+    background-image: url('https://i.ibb.co/0XxQr19/balloons.png'); 
+    background-size: cover;
+}
+
+.cake {
+    background-image: url('https://i.ibb.co/252P4pj/birthday-cake.png'); 
+    background-size: cover;
+}
+
+/* Keyframes for "pop" animation */
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
