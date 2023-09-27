@@ -1,7 +1,16 @@
- document.addEventListener("DOMContentLoaded", function () {
-     const backgroundMusic = document.getElementById("backgroundMusic");
-     backgroundMusic.play();
- });
+function playBackgroundMusic() {
+    const backgroundMusic = document.getElementById("backgroundMusic");
+    if (backgroundMusic && typeof backgroundMusic.play === 'function') {
+        backgroundMusic.play();
+    }
+}
+
+// Add a click event listener to play the background music on user interaction
+document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("click", playBackgroundMusic, { once: true });
+
+});
+
 function popElement(elementId) {
     const element = document.getElementById(elementId);
     element.style.animation = "pop 0.5s ease";
