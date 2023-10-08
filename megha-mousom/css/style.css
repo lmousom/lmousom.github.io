@@ -393,6 +393,11 @@
 	background: #674ea7;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 /*******************************/
 
@@ -542,7 +547,7 @@ body {
 	width: auto;
 	height: auto;
 	margin: 0 1em;
-	background-color: #674ea7;
+	background-color: #800020;
 	border-radius: 16px;
 	text-align: center;
 	color: #fff;
@@ -643,4 +648,58 @@ a {
 	display: flex;
 	font-size: 12px;
 	letter-spacing: 0pt;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+	/* Center horizontally */
+	align-items: center;
+	/* Center vertically */
+	transition: transform 0.3s ease;
+	/* Add a hover effect */
+}
+
+.image-container img {
+	width: auto;
+	/* Set a fixed width for the images */
+	height: 400px;
+	/* Set a fixed height for the images */
+	margin: 0 8px;
+	/* Add some horizontal spacing between the images */
+
+}
+
+.image-container:hover {
+	transform: scale(1.1);
+	/* Enlarge the photo on hover */
+}
+
+
+/* Mobile-friendly styles */
+@media screen and (max-width: 768px) {
+	.image-container {
+		margin-bottom: 50px;
+
+	}
+
+	.dance-med {
+		font-size: 20px;
+	}
+
+	.title h3 {
+		font-weight: 300;
+		font-size: 20px;
+
+	}
+
+	.image-container img {
+		width: 500px;
+		/* Set a fixed width for the images */
+		height: 200px;
+		/* Set a fixed height for the images */
+		margin: 0 8px;
+		/* Add some horizontal spacing between the images */
+	}
 }
