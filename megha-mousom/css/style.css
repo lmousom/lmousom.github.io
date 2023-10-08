@@ -653,6 +653,7 @@ a {
 .image-container {
 	display: flex;
 	justify-content: center;
+	margin-top: 10px;
 	margin-bottom: 100px;
 	/* Center horizontally */
 	align-items: center;
@@ -697,9 +698,10 @@ a {
 	.image-container img {
 		width: 500px;
 		/* Set a fixed width for the images */
-		height: 200px;
+		height: 160px;
 		/* Set a fixed height for the images */
 		margin: 0 8px;
 		/* Add some horizontal spacing between the images */
+		scale: 1.4;
 	}
 }
